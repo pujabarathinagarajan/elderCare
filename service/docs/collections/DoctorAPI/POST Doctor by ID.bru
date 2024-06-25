@@ -1,0 +1,46 @@
+meta {
+  name: POST Doctor by ID
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/elderlycare/doctors
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "fullName": "Dr. Isabella Martinez",
+    "email": "isabella.martinez@wellnesspath.com",
+    "speciality": [
+      "Endocrinology"
+    ],
+    "experience": 7,
+    "rating": 4.3,
+    "location": [
+      "Denver",
+      "Colorado"
+    ],
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "education": "Columbia University Vagelos College of Physicians and Surgeons",
+    "certifications": [
+      "Diabetes Educator"
+    ],
+    "docId": "8df3b2c5e6a1d4f54eb1a2c3",
+    "phoneNo": "6987654321",
+    "bio": "Dr. Martinez is dedicated to helping patients manage hormonal imbalances and diabetes with cutting-edge treatments.",
+    "img": {
+      "$binary": {
+        "base64": "BASE64_ENCODED_IMAGE_DATA",
+        "subType": "00"
+      }
+    },
+    "nextAvailableTime": "2024-07-27T16:30:00Z",
+    "gender": "Female"
+  }
+}

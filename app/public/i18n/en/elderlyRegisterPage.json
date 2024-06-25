@@ -1,0 +1,17 @@
+{
+    "elderly-register.welcome": "Welcome",
+    "elderly-register.createAccount": "Create an account with ElderlyCare",
+    "elderly-register.name": "Full Name",
+    "elderly-register.email": "Email",
+    "elderly-register.password": "Password",
+    "elderly-register.repeatPassword": "Repeat Password",
+    "elderly-register.submit": "Submit",
+    "elderly-register.noAccount": "Don't have an account?",
+    "elderly-register.register": "Register",
+    "elderly-register.description": "What describes you the best?",
+    "elderly-register.needCare": "I need care",
+    "elderly-register.careGiver": "I am a caregiver",
+    "elderly-register.alreadyHaveAccount": "Already have an account?",
+    "elderly-register.login": "Login"
+  }
+  

@@ -1,0 +1,108 @@
+openapi: 3.1.0
+info:
+  title: Elderly Care Hub API
+  summary: REST Service for Elderly Care Hub Platform
+  version: "v1.0"
+servers:
+  - url: http://elderlycarehub.example.com
+paths:
+  /listing-health-experts:
+    get:
+      operationId: list-health-experts
+      description: Retrieves a list of health experts based on specified criteria
+      parameters:
+        - name: specialty
+          in: query
+          description: Specialty of the health expert
+          required: false
+          schema:
+            type: string
+        - name: location
+          in: query
+          description: Location of the health expert's practice
+          required: false
+          schema:
+            type: string
+        - name: language
+          in: query
+          description: Language spoken by the health expert
+          required: false
+          schema:
+            type: string
+        - name: availability
+          in: query
+          description: Availability of the health expert for appointments
+          required: false
+          schema:
+            type: string
+        - name: patientRating
+          in: query
+          description: Minimum patient rating of the health expert
+          required: false
+          schema:
+            type: number
+            format: float
+        - name: affordability
+          in: query
+          description: Maximum consultation fee accepted by the user
+          required: false
+          schema:
+            type: number
+            format: float
+      responses:
+        "200":
+          description: Successfully retrieved list of health experts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/HealthExpert"
+        "401":
+          description: Unauthorized Request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    HealthExpert:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        specialty:
+          type: string
+        location:
+          type: string
+        language:
+          type: string
+        availability:
+          type: string
+        patientRating:
+          type: number
+          format: float
+        affordability:
+          type: number
+          format: float
+      example:
+        id: 1
+        name: "Dr. John Smith"
+        specialty: "Cardiology"
+        location: "New York, NY"
+        language: "English"
+        availability: "Monday-Friday, 9am-5pm"
+        patientRating: 4.5
+        affordability: 100.00
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      example:
+        code: Unauthorized
+        message: User is unauthorized

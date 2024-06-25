@@ -1,0 +1,27 @@
+meta {
+  name: PATCH Doctor by ID
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:3000/elderlycare/doctors/6616d6b05ccf629afd24e70b
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "_id": "6616d6b05ccf629afd24e70b",
+      "name": "Dr. John Doe",
+      "location": "Los Angeles",
+      "rating": 4.5,
+      "speciality": "General Practitioner",
+      "education": "MD, University Medical School",
+      "yearsOfExperience": 10,
+      "picture": "john_doe.jpg",
+      "nextAvailableTime": "2024-04-10T10:00:00Z",
+      "gender": "Male",
+      "__v": 0
+    }
+}

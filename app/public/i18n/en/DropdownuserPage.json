@@ -1,0 +1,9 @@
+{
+    "dropdownUser": {
+      "myProfile": "My Profile",
+      "myContacts": "My Contacts",
+      "accountSettings": "Account Settings",
+      "logOut": "Log Out"
+    }
+  }
+  

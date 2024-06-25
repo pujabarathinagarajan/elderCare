@@ -1,0 +1,134 @@
+/* DoctorCard.css */
+.doctor-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    /* Your card's background color */
+    font-family: 'Your Font', sans-serif;
+    /* Replace with your font */
+}
+
+.doctor-image-container {
+    position: relative;
+}
+
+.doctor-image {
+    width: 80px;
+    /* Your image size */
+    height: 80px;
+    border-radius: 50%;
+    padding-bottom: 2px;
+    margin-top: -30px;
+}
+
+.doctor-experience-badge {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    /* Your badge background color */
+    border: 3px solid #9B51E0;
+    color: #9B51E0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    width: 100px;
+}
+
+.doctor-info {
+    flex-grow: 1;
+    padding: 0 40px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.doctor-name {
+    font-size: 1.5em;
+    color: #333;
+    /* Your text color */
+    margin-right: 20px;
+}
+
+.doctor-rating {
+    display: flex;
+    align-items: center;
+    background-color: #9B51E0;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+.doctor-rating-number {
+    font-size: 1.2em;
+    color: #FFF;
+    /* Your rating number color */
+    margin-right: 5px;
+}
+
+.doctor-location-speciality {
+    font-size: 1em;
+    color: #4F4F4F;
+    /* Your subtext color */
+}
+
+.divider {
+    margin: 0 10px;
+}
+
+.doctor-education {
+    font-size: 0.9em;
+    color: #828282;
+    /* Your education text color */
+}
+
+.doctor-next-available {
+    font-size: 0.9em;
+    /* color: #6FCF97;  Your available time color */
+    color: #333;
+}
+
+.doctor-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-button,
+.book-button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+}
+
+.message-button {
+    background-color: #E0E0FF;
+    /* Your message button color */
+    color: #9B51E0;
+}
+
+.book-button {
+    background-color: #9B51E0;
+    /* Your book button color */
+    color: #E0E0FF;
+}
+
+.message-button i,
+.book-button i {
+    margin-right: 10px;
+}

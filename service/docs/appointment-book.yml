@@ -1,0 +1,78 @@
+openapi: 3.1.0
+info: 
+  title: The BookAppointments API
+  summary: The REST service to book appointments.
+  version: 'v1.0'
+servers:
+  - url: http://elderlycarehub.example.com
+paths:
+  /appointment/book:
+    post:
+      operationId: book-appointments
+      description: Books doctor appointment based on the requirements passed by patients
+      requestBody: 
+        required: true
+        content: 
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/BookAppointments'
+      responses: 
+        "200":
+          description: Successfully saved
+          content: 
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/BookAppointments'
+        "401":
+          description: Unauthenticated Request
+          content: 
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/Error'
+components: 
+  schemas: 
+    BookAppointments:
+      type: object
+      properties: 
+        doctorId: 
+          type: string
+          examples: 
+            - doc4820
+        patientId: 
+          type: string
+          examples: 
+            - pt38632
+        dateTime: 
+          type: object
+          examples: 
+            - 10/03/2024 5:00 pm UTC
+        duration: 
+          type: integer
+          examples: 
+            - 120
+        speciality: 
+          type: string
+          examples: 
+            - cardiologist
+        healthConcern: 
+          type: string
+          examples: 
+            - frequent headaches 
+      required:
+        - doctorId
+        - patientId
+        - dateTime
+        - duration
+        - speciality
+        - healthConcern
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          examples: 
+            - Unauthenticated
+        message:
+          type: string
+          examples: 
+            - User is unauthenticated

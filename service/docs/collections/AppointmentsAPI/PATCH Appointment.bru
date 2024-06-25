@@ -1,0 +1,27 @@
+meta {
+  name: PATCH Appointment
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3000/elderlycare/appointments/66253cf24c5501ad3816d3ba
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "doctorId": "f2c10ae15edb495bb42f3c1f",
+      "patientId": "p88e64b997a5d8a258e5efe3",
+      "appointmentId": "b6609e761ac2d9a1420f563c",
+      "dateTime": "2024-04-08T22:00:00.000Z",
+      "status": "Cancelled",
+      "duration": 45,
+      "speciality": "Dermatology",
+      "healthConcern": [
+        "Skin Rash"
+      ],
+      "location": "Illinois"
+    }
+}

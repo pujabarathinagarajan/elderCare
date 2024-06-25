@@ -1,0 +1,16 @@
+meta {
+  name: patch bookingInfo
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:3000/elderlycare/getBookingInfo?appointmentId=a5509e761ac2d9a1420f563b&status=Pending
+  body: none
+  auth: none
+}
+
+query {
+  appointmentId: a5509e761ac2d9a1420f563b
+  status: Pending
+}

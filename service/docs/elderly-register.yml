@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: Elderly Care Hub API - Registration
+  summary: REST Service for Elderly Care Hub Platform, focusing on registration.
+  version: "v1.0"
+servers:
+  - url: http://elderlycarehub.example.com
+paths:
+  /elderly/register:
+    post:
+      operationId: elderlyRegister
+      description: Register a new elderly patient account, including their health concerns.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ElderlyRegister"
+      responses:
+        "201":
+          description: Account created successfully.
+        "400":
+          description: Invalid input data.
+        "409":
+          description: Account already exists.
+components:
+  schemas:
+    ElderlyRegister:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+        fullName:
+          type: string
+        healthConcerns:
+          type: array
+          items:
+            type: string
+          description: List of health concerns or problems the elder has.
+      required:
+        - email
+        - password
+        - fullName
+        - healthConcerns

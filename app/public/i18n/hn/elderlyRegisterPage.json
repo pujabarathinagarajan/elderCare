@@ -1,0 +1,17 @@
+{
+    "elderly-register.welcome": "स्वागत है",
+    "elderly-register.createAccount": "एल्डरलीकेयर के साथ खाता बनाएं",
+    "elderly-register.name": "पूरा नाम",
+    "elderly-register.email": "ईमेल",
+    "elderly-register.password": "पासवर्ड",
+    "elderly-register.repeatPassword": "पासवर्ड दोहराएं",
+    "elderly-register.submit": "प्रस्तुत करें",
+    "elderly-register.noAccount": "खाता नहीं है?",
+    "elderly-register.register": "रजिस्टर करें",
+    "elderly-register.description": "आपको सबसे अच्छा कैसे वर्णित करता है?",
+    "elderly-register.needCare": "मुझे देखभाल की आवश्यकता है",
+    "elderly-register.careGiver": "मैं देखभाल करने वाला हूँ",
+    "elderly-register.alreadyHaveAccount": "क्या आपके पास पहले से ही खाता है?",
+    "elderly-register.login": "लॉग इन करें"      
+  }
+  

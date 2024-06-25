@@ -1,0 +1,29 @@
+{
+    "settings.pageTitle": "Settings",
+    "settings.personalInformation.sectionTitle": "Personal Information",
+        "settings.personalInformation.labels.fullName": "Full Name",
+          "settings.personalInformation.labels.phoneNumber": "Phone Number",
+          "settings.personalInformation.labels.emailAddress": "Email Address",
+          "settings.personalInformation.labels.experience": "Experience",
+          "settings.personalInformation.labels.bio": "BIO",
+          "settings.personalInformation.labels.speciality": "Speciality",
+          "settings.personalInformation.labels.location": "Location",
+
+          "settings.personalInformation.placeholders.phoneNumber": "+XXX XXX XXXX",
+          "settings.personalInformation.placeholders.emailAddress": "devidjond45@gmail.com",
+          "settings.personalInformation.placeholders.experience": "experience",
+          "settings.personalInformation.placeholders.bio": "Write something about you under 200 letters",
+        "settings.photoSection.sectionTitle": "Your Photo",
+   
+          "settings.photoSection.labels.editPhoto": "Edit your photo",
+          "settings.photoSection.labels.delete": "Delete",
+          "settings.photoSection.labels.update": "Update",
+          "settings.photoSection.labels.clickToUpload": "Click to upload",
+          "settings.photoSection.labels.acceptedFormats": "SVG, PNG, JPG or GIF",
+          "settings.photoSection.labels.maxDimensions": "(max, 800 X 800px)",
+       
+        "settings.buttons.cancel": "Cancel",
+        "settings.buttons.save": "Save"
+   
+  }
+  

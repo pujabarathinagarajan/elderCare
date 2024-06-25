@@ -1,0 +1,104 @@
+openapi: 3.1.0
+info:
+  title: Elderly Care Hub API
+  summary: REST Service for Elderly Care Hub Platform
+  version: "v1.0"
+servers:
+  - url: http://elderlycarehub.example.com
+paths:
+  /doctor-search:
+    get:
+      operationId: search-doctors
+      description: Searches for doctors based on specified criteria
+      parameters:
+        - name: location
+          in: query
+          description: Location of the doctor's practice
+          required: true
+          schema:
+            type: string
+        - name: specialty
+          in: query
+          description: Medical specialty of the doctor
+          required: true
+          schema:
+            type: string
+        - name: language
+          in: query
+          description: Language spoken by the doctor
+          required: true
+          schema:
+            type: string
+        - name: availability
+          in: query
+          description: Availability of the doctor for appointments
+          required: true
+          schema:
+            type: string
+        - name: patientRating
+          in: query
+          description: Minimum patient rating of the doctor
+          required: false
+          schema:
+            type: number
+        - name: affordability
+          in: query
+          description: Maximum consultation fee accepted by the user
+          required: false
+          schema:
+            type: number
+      responses:
+        "200":
+          description: Successfully retrieved doctor information
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Doctor"
+        "401":
+          description: Unauthorized Request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Doctor:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        specialty:
+          type: string
+        location:
+          type: string
+        language:
+          type: string
+        availability:
+          type: string
+        patientRating:
+          type: number
+        affordability:
+          type: number
+      example:
+        id: 1
+        name: Dr. Smith
+        specialty: Cardiology
+        location: New York
+        language: English
+        availability: Monday-Friday, 9am-5pm
+        patientRating: 4.5
+        affordability: 100.00
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      example:
+        code: Unauthorized
+        message: User is unauthorized

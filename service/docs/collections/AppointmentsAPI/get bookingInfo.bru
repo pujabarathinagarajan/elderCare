@@ -1,0 +1,15 @@
+meta {
+  name: get bookingInfo
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:3000/elderlycare/getBookingInfo?doctorId=6619e84d997a5d8a258e5ee4
+  body: none
+  auth: none
+}
+
+query {
+  doctorId: 6619e84d997a5d8a258e5ee4
+}

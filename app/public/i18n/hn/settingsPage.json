@@ -1,0 +1,28 @@
+{
+    "settings.pageTitle": "सेटिंग्स",
+    "settings.personalInformation.sectionTitle": "व्यक्तिगत जानकारी",
+    "settings.personalInformation.labels.fullName": "पूरा नाम",
+    "settings.personalInformation.labels.phoneNumber": "फोन नंबर",
+    "settings.personalInformation.labels.emailAddress": "ईमेल पता",
+    "settings.personalInformation.labels.experience": "अनुभव",
+    "settings.personalInformation.labels.bio": "जीवनी",
+    "settings.personalInformation.labels.speciality": "विशेषज्ञता",
+    "settings.personalInformation.labels.location": "स्थान",
+  
+    "settings.personalInformation.placeholders.phoneNumber": "+XXX XXX XXXX",
+    "settings.personalInformation.placeholders.emailAddress": "devidjond45@gmail.com",
+    "settings.personalInformation.placeholders.experience": "अनुभव",
+    "settings.personalInformation.placeholders.bio": "200 अक्षरों के अंतर्गत कुछ लिखें",
+    
+    "settings.photoSection.sectionTitle": "आपका फोटो",
+    "settings.photoSection.labels.editPhoto": "अपनी फोटो संपादित करें",
+    "settings.photoSection.labels.delete": "हटाएं",
+    "settings.photoSection.labels.update": "अपडेट करें",
+    "settings.photoSection.labels.clickToUpload": "अपलोड करने के लिए क्लिक करें",
+    "settings.photoSection.labels.acceptedFormats": "SVG, PNG, JPG या GIF",
+    "settings.photoSection.labels.maxDimensions": "(अधिकतम, 800 X 800px)",
+    
+    "settings.buttons.cancel": "रद्द करें",
+    "settings.buttons.save": "सहेजें"
+  }
+  

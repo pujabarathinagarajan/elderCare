@@ -1,0 +1,9 @@
+{
+  "elderly-login.welcome": "Welcome",
+  "elderly-login.createAccount": "Create an account with ElderlyCare",
+  "elderly-login.email": "Email",
+  "elderly-login.password": "Password",
+  "elderly-login.submit": "Submit",
+  "elderly-login.noAccount": "Don't have an account?",
+  "elderly-login.register": "Register"
+}

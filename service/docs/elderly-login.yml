@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  title: Elderly Care Hub API - Login
+  summary: REST Service for Elderly Care Hub Platform, focusing on login.
+  version: "v1.0"
+servers:
+  - url: http://elderlycarehub.example.com
+paths:
+  /elderly/login:
+    post:
+      operationId: elderlyLogin
+      description: Elderly patient login to the platform.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ElderlyLogin"
+      responses:
+        "200":
+          description: Login successful.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Login successful.
+        "401":
+          description: Unauthorized - Incorrect login credentials.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    ElderlyLogin:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+      required:
+        - email
+        - password
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      example:
+        code: "401"
+        message: Incorrect email or password.

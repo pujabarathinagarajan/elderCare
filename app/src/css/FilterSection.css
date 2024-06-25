@@ -1,0 +1,64 @@
+/* FilterSection.css */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 25%;
+}
+
+.filter-section h2 {
+    font-size: 1.25rem;
+    color: #333;
+    /* Adjust based on your color scheme */
+    margin-bottom: 10px;
+}
+
+.filter-section .clear-filters {
+    align-self: flex-end;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    color: #9B51E0;
+    /* Bootstrap primary color for reference */
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.filter-dropdown {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    /* Bootstrap's border color for reference */
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    -webkit-appearance: none;
+    /* Removes default styling on iOS */
+    -moz-appearance: none;
+    /* Removes default styling on Firefox */
+    appearance: none;
+    /* Removes default styling */
+}
+
+input.filter-dropdown {
+    padding: 10px;
+    width: 100%;
+}
+
+/* Add custom arrow indicator for dropdowns */
+.filter-dropdown {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.796 7a1 1 0 0 1 .781 1.625l-2.676 3.084a.25.25 0 0 0 0 .582l2.676 3.084a1 1 0 1 1-1.562 1.24l-3-3.456a.75.75 0 0 1 0-1.24l3-3.456A1 1 0 0 1 5.796 7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem top 50%, 0 0;
+    /* Adjust the position as needed */
+    background-size: 1.25em auto, 100%;
+}
+
+.clear-filters-title {
+    display: flex;
+    flex-direction: row;
+}

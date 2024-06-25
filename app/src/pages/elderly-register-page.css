@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+.container {
+    position: static;
+    height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    height: 35px;
+}
+
+.lowerLeftBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20vh;
+    width: 35vh;
+    background-color: #8659d3;
+}
+
+.upperRightBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    width: 30vh;
+    background-color: #8659d3;
+    border-end-start-radius: 30px;
+}
+
+.quote{
+    position: absolute;
+    right: 20vh;
+    width: 500px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+} 
+
+.quote img{
+    width: inherit;
+}
+
+.register {
+    position: absolute;
+    z-index: 0;
+    left: 23vh;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.dots{
+    position: absolute;
+    left: 75vh;
+    bottom: 5vh;
+    height: 30vh;
+    z-index: -1;
+
+}

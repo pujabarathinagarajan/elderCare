@@ -1,0 +1,17 @@
+meta {
+  name: Filter DocApt Join
+  type: http
+  seq: 10
+}
+
+get {
+  url: http://localhost:3000/elderlycare/filterDoctorAndApoointment?status=Confirmed&date=2024-08-02
+  body: none
+  auth: none
+}
+
+query {
+  status: Confirmed
+  date: 2024-08-02
+  ~name: a5509e761ac2d9a1420f563b
+}

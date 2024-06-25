@@ -1,0 +1,47 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .pagination {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    color: #7e7e7e;
+    font-weight: bold;
+    border: 1px solid #dddfe2;
+  }
+
+  .arrow {
+    border: none;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #8a2be2;
+    color: white;
+    border: 1px solid #8a2be2;
+  }
+  
+  .page-item.disabled .page-link {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Additional styling for ellipsis or specific design can be added here */
+  

@@ -1,0 +1,53 @@
+openapi: 3.1.0
+info: 
+  title: The ViewAppointments API
+  summary: The REST service to view appointments.
+  version: 'v1.0'
+servers:
+  - url: http://elderlycarehub.example.com
+paths:
+  /appointment/view:
+    get:
+      operationId: get-view-appointments
+      description: Fetches appointment by the filters passed
+      requestBody: 
+        required: true
+        content: 
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/ViewAppointments'
+      responses: 
+        "200":
+          description: Successfully saved
+          content: 
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/ViewAppointments'
+        "401":
+          description: Unauthenticated Request
+          content: 
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/Error'
+components: 
+  schemas: 
+    ViewAppointments:
+      type: object
+      properties: 
+        appointmentId: 
+          type: string
+          examples: 
+            - apt0951
+      required:
+        - appointmentId     
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          examples: 
+            - Unauthenticated
+        message:
+          type: string
+          examples: 
+            - User is unauthenticated

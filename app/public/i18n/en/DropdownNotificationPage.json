@@ -1,0 +1,28 @@
+{
+    "dropdownNotification": {
+      "notification": "Notification",
+      "messages": [
+        {
+          "content": "Edit your information in a swipe. ",
+          "morecontent":"Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+          "date": "12 May, 2025"
+        },
+        {
+          "content": "It is a long established fact ",
+          "morecontent":"that a reader will be distracted by the readable.",
+          "date": "24 Feb, 2025"
+        },
+        {
+          "content": "There are many variations of passages of",
+          "morecontent":"Lorem Ipsum available, but the majority have suffered.",
+          "date": "04 Jan, 2025"
+        },
+        {
+          "content": "There are many variations of passages of",
+          "morecontent":"Lorem Ipsum available, but the majority have suffered.",
+          "date": "01 Dec, 2024"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "AppointmentsAPI",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

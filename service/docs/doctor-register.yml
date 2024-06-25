@@ -1,0 +1,90 @@
+openapi: 3.0.0
+info:
+  title: Doctor Management API
+  version: 1.0.0
+  description: API for managing doctor registration, login, and home page.
+
+servers:
+  - url: http://localhost:3001
+    description: Local development server
+
+paths:
+  /doctor-register:
+    post:
+      summary: Register a new doctor
+      tags:
+        - Doctor
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                username:
+                  type: string
+                password:
+                  type: string
+                category:
+                  type: string
+                gender:
+                  type: string
+                age:
+                  type: integer
+                experience:
+                  type: integer
+              required:
+                - name
+                - username
+                - password
+                - category
+                - gender
+                - age
+                - experience
+      responses:
+        '200':
+          description: Doctor registered successfully
+        '400':
+          description: Bad request
+
+  /doctor-login:
+    post:
+      summary: Login as a doctor
+      tags:
+        - Doctor
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+              required:
+                - username
+                - password
+      responses:
+        '200':
+          description: Login successful
+        '401':
+          description: Unauthorized
+        '404':
+          description: Doctor not found
+
+  /home:
+    get:
+      summary: Get home page for logged-in doctor
+      tags:
+        - Doctor
+      responses:
+        '200':
+          description: Home page retrieved successfully
+        '401':
+          description: Unauthorized
+        '404':
+          description: Page not found

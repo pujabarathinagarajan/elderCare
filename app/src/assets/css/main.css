@@ -1,0 +1,195 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as desired */
+}
+
+/* Style the scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Change the color as desired */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+  /* text-align: left; */
+}
+
+.modal-overlay-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+#\:r1\:-grid-label {
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.modal .close,
+.modal-1 .close {
+  padding: 8px 16px;
+  border: none;
+  border: 2px solid #8659d3;
+  color: #8659d3;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.modal .close :hover {
+  background-color: #0056b3;
+}
+.modal {
+  display: flex;
+}
+
+.leftDiv {
+  flex: 1; /* Take up all available space */
+}
+
+.rightDiv {
+  flex: 1; /* Take up all available space */
+  text-align: right; /* Align content to the right within the div */
+  margin-top: 8%;
+}
+.book {
+  margin-top: 117%;
+  padding: 8px 16px;
+  border: none;
+
+  color: white;
+  background-color: #8659d3;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal Content Styles */
+.modal-content {
+}
+
+/* Heading Styles */
+.modal-content h2 {
+  text-align: center; /* Center the heading */
+  font-family: Lexend;
+  color: #8659d3;
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size as needed */
+}
+.curved-border {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+  text-align: right;
+}
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+/* Add this to your CSS file */
+#\:r3\:-grid-label {
+  color: black; /* Set the color to black */
+  font-weight: bold; /* Make the text bold */
+  font-size: 20px; /* Set the font size to 20 pixels */
+}
+
+/* Add this to your CSS file */
+.MuiDateCalendar-root {
+  border: 1.2px solid rgb(227, 225, 225); /* Set border to 2px solid light gray */
+  border-radius: 10px; /* Set border radius to create a rounded border */
+  padding: 10px; /* Optional: Add padding to give space between content and border */
+}
+
+/* Assuming your DateCalendar renders the days in a grid */
+/* You may need to inspect the generated HTML to identify the specific elements to target */
+
+/* Add this to your CSS file */
+.MuiDayCalendar-header [aria-label="Monday"],
+.MuiDayCalendar-header [aria-label="Tuesday"],
+.MuiDayCalendar-header [aria-label="Wednesday"],
+.MuiDayCalendar-header [aria-label="Thursday"],
+.MuiDayCalendar-header [aria-label="Friday"],
+.MuiDayCalendar-header [aria-label="Saturday"],
+.MuiDayCalendar-header [aria-label="Sunday"] {
+  color: #8659d3; /* Change the color to purple */
+}
